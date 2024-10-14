@@ -3,24 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Document</title>
 </head>
 <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        background-color: black;
+
+    }
+ 
     nav{
         display: flex;
+        border: 2px solid black;
+        height: 50px;
+        background-color: black;
+        ;
     }
-.navbar{
-    border: 2px solid black;
-    height: 100%;
-    width: 50px;;
+    .logo{
+        width: 200px;
+        padding-top: 5px;
 
-}
+    }
+    .logo > img{
+        height: 100%;
+        width: 100%;
+       object-fit: cover;
+    }
+    .right{
+        display: flex;
+        position: absolute;
+        right: 70px;
+        gap: 80px;
+        background-color: black;
+        
+
+    }
+    .right p{
+        color: #c3c8c7;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding-top: 15px;
+        
+    }
+    .right button{
+
+        color: #c3c8c7;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);  
+    }
+    .middle{
+        /* border: 2px solid white; */
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        background-color: black;
+        align-items: center;
+    }
+    .main{
+        /* border: 2px solid white; */
+        width: 800px;
+         margin-top: 150px;
+         text-align: center;
+         background-color: black;
+    }
+    h1{
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        color: white
+    }
+    h2{
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        color: #7802d7;
+    }
+    .old{
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: bold;
+    }
+    .button{
+        border: 2px solid  #8a63ce;
+        width: 430px;
+        height: 50px;
+        margin-top: 60px;
+        margin-left: 185px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 10px rgba(138, 0, 255, 0.6);  
+    }
+    .inbutton{
+        border: 2px solid #7b0fff;
+        height: 30px;
+        width: 90px;
+        margin-left: auto;
+        margin-right: 7px;
+        margin-top: 7px;
+        border-radius: 10px;
+        background-color: #7b0fff;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        left: 80px;
+    }
+    .new{
+        text-align: center;
+        margin-top: 5px;
+        color: white;
+        background-color: #7b0fff;
+    }
+    .vegan{
+        
+        display: inline-block;
+        position: relative;
+        right: 70px;     
+    }
+    .invegan{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .lastp{
+        
+        display: inline-block;
+        color: #c3c8c7;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        position: relative;
+        display: flex;
+        padding: 15px;
+        margin-top: 25px;
+        margin-left: 170px;
+        height: 50px;
+        align-items: center;
+    }
+    i{
+        color: forestgreen;
+    }
+    #buttoni{
+        background-color: white;
+    }
+    .lastbutton{
+       color: black;
+       background-color: white;
+       border-radius: 10px;
+       height: 25px;
+       width: 80px;
+       margin-bottom: 0px;
+       font-family: Arial, Helvetica, sans-serif;
+    }
+    .footer{
+        display: flex;
+        border: 2px solid white;
+        height: 25px;
+        width: 145px;
+        border-radius: 10px;
+        background-color: white;
+        margin-left: 320px;
+        margin-top: 50px;
+    }
+    .infooter{
+        border: 2px solid white;
+        overflow: hidden;
+        margin-left: auto;
+        width: 50px;;
+        margin-right: 5px;
+    }
+    .footerimg{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: white;
+    }
+    .footerp{
+        color: black;
+        background-color: white;
+        margin-left: 10px;
+        padding-top: 5px;
+        padding-left: 3px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        font-weight: bold;
+        
+   
+    }
+
 </style>
 <body>
     <nav>
-        <div class="navbar"></div>
+        <div class="logo">
+            <img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5fa350988c570600017f5a12/0x0.png" alt="img logo">
+        </div>
+        <div class="right">
+            <p>Pricing</p>
+            <p>Features</p>
+            <p>Showcase</p>
+            <button>Login</button>
+            <button>sign Up	&#8594;</button>
+        </div>
         
     </nav>
+    <div class="middle">
+        <div class="main">
+            <h1>Get Your</h1>
+            <h2>AI Generated Website</h2>
+            <h1>In Seconds</h1>
+            <p class="old">Give it a try right bellow, without having to sign up!</p>
+            <div class="button">
+                <div class="vegan">
+                    <p class="invegan">Vegan Pizza Restarunt in</p></div>
+                
+                <div class="inbutton">
+                   <p class="new">Generate ⁖</p> 
+                </div>
+            </div>
+           
+                <p class="lastp">Excellent&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.8 out of 5 based on 85 reviews&nbsp;&nbsp;&nbsp;<button class="lastbutton"><i id="buttoni" class="fa-solid fa-star"></i>Trustpilot</button></p>
+           <div class="footer">
+            <p class="footerp">Made With</p>
+            <div class="infooter">
+                
+                <img class="footerimg" src="https://www.umso.com/lib_LUGoPiqXXlDptSWA/n6n24jywpz52ayxr.png" alt="logo">
+            </div>
+
+           </div>
+        </div>
+        
+    </div>
+    
 
     
 </body>
