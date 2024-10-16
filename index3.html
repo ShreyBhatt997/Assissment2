@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="/sites/default/files/favicon1_0.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/optimized/css_uDQnWDhafYndBVn38IqkUMIDpv-TiVZcvM3qoUCTFt4.BOwjvwwXNup9pSXTWQVjmphMVhKHw4-UwW5gddWQZ38.css?sldybo">
+
+    <style>
+        *{
+            margin: 0px;
+        }
+        
+        .main{
+            /* border: 2px solid black; */
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            flex-direction: 
+        }
+        .nav{
+            /* border: 1px solid black; */
+            height: 100vh;
+            width: 90px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 100px;
+
+        }
+        .nav > div:first-child{
+            
+            height: 120px;
+            display: flex;
+            background-color: yellow;
+        }
+        .ran{
+            
+            width: 100%;
+            height: 80px;
+            position: relative;
+            top: 30px;
+            left: 25px;
+            overflow: hidden;
+            
+        }
+        .ran > img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+        
+        .nav > div + div{
+            
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .new{
+            
+            height: 30px;
+            width: 30px;
+            margin: 0px;
+            overflow: hidden;
+
+        }
+        .nav > div + div > p{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .nav > div + div > div > img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .below {
+            padding-top: 5px;
+        }
+
+        .midone{
+            border-right: 2px solid #cecfce;
+            width: 45%;
+            height: 80%;
+            margin-top: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #fcfcfc;
+        }
+        h1{
+            margin: 0px;
+        }
+      
+      
+        .facebook{
+            /* border: 2px solid black; */
+            height: 25px;
+            width: 180px;
+            display: flex;
+            background-color: #325f9c;
+            align-items: center;
+            position: relative;
+            right: 50px;
+            
+        }
+        .facebookin{
+      
+            height: 17px;
+            width: 20px;
+            overflow: hidden;
+            margin-left: 5px;
+            margin-right: 5px;
+            
+            background-color: white;
+            
+        }
+        .facebookin > img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .fbp{
+            color: white;
+            background-color: #325f9c;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: smaller;
+        }
+        /*  */
+        .google{
+            border: 1px solid #cecfce;
+            height: 25px;
+            width: 180px;
+            display: flex;
+            background-color: white;
+
+            align-items: center;
+            position: relative;
+            bottom: 26px;
+            right: 50px;
+            
+        }
+        .googlein{
+     
+            height: 20px;
+            width: 20px;
+            overflow: hidden;
+            margin-left: 5px;
+            margin-right: 5px;
+            
+            background-color: white;
+            
+        }
+        .googlein > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gop{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: smaller;
+        }
+        .he{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333333;
+            font-size: 40px;
+        }
+        .area{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 30px;
+        }
+        .area > label{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            color: #bbacad;
+        }
+        .area >input{
+            height: 50px;
+            width: 350px;
+
+        }
+        .newarea{
+            bottom: 25px;
+            
+        }
+        .button{
+            display: flex;
+            position: relative;
+            left: 30px;
+            
+        }
+        .button > button{
+            height: 60px;
+            width: 360px;
+            border-radius: 0px;
+            border: 1px solid white;
+            background-color: #cccccc;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+        }
+        .forgot{
+            position: relative;
+            left: 130px;
+            bottom: 30px;
+        }
+        .forgot > p{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+            font-size: medium;
+            color:#bbacad;
+        }
+        /* midtwo */
+        .midtwo{
+            /* border: 2px solid black; */
+            width: 45%;
+            height: 80%;
+            margin-top: 140px;
+            display: flex;
+            flex-direction: column;
+            
+            background-color: #fcfcfc;
+
+        }
+        .ho{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333333;
+            font-size: 40px;
+        }
+        .twobutton{
+            display: flex;
+            margin-left: 80px;
+            margin-bottom: 70px;
+        }
+        .twobutton > button{
+            height: 70px;
+            width: 430px;
+            border-radius: 0px;
+            border: 1px solid white;
+            background-color: #333333;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+        }
+        .today{
+            margin-left: 76px;
+
+        }
+        .today > p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        ul {
+            list-style: none; 
+            padding-left: 0; 
+        }
+
+        ul li {
+            position: relative;
+             margin-bottom: 20px; 
+            padding-left: 40px; 
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+        }
+
+        ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            background-color: #66bb33;
+            color: white; 
+            border-radius: 50%; 
+            text-align: center;
+            line-height: 30px; 
+            font-size: 18px;
+        }
+        .not{
+            margin-left: 80px;
+            margin-bottom: 45px;
+            margin-top: 100px;
+        }
+
+        .list{
+            margin-left: 80px;
+            margin-top: 50px;
+        }
+
+
+
+      
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div>
+                <div class="ran">
+                    <img src="https://1000logos.net/wp-content/uploads/2021/12/Maggi-logo.png" alt="logo">
+                </div>
+            </div>
+    
+            <div>
+                <p>Recipes</p>
+                <div class="new">
+                    <img src="https://www.maggi.in/sites/default/files/2020-01/01_Rezepte.svg" alt="logo">
+                </div>
+            </div>
+            <div>
+                
+                <div class="new">
+                    <img src="https://www.maggi.in/sites/default/files/2019-12/05_Maggi.svg" alt="logo">
+                </div>
+                <p class="below">Maggi</p>
+                
+            </div>
+            <div>
+    
+                <div class="new">
+                    <img src="https://www.maggi.in/sites/default/files/2022-12/LogoMealPlanner_0.svg" alt="logo">
+                </div>
+                <p class="below">MyMeny Plan</p>
+            </div>
+            <div>
+            
+                <div class="new">
+                    <img src="https://www.maggi.in/sites/default/files/2019-12/03_Suche_11.svg" alt="logo">
+                </div>
+                <p class="below">Search</p>
+            </div>
+            <div>
+                
+                <div class="new">
+                    <img src="https://www.maggi.in/sites/default/files/2020-07/MAGGI_Navigation_MyMaggi_0_0.svg" alt="logo">
+                </div>
+                <p class="below">Login</p>
+            </div>
+        </div>
+        <div class="midone">
+            <div>
+                <h1 class="he">My Maggi</h1>
+                <h1 class="he">Welcome Back!</h1>
+            </div>
+            <div class="facebook">
+                <div class="facebookin"> <img src="https://www.pngplay.com/wp-content/uploads/9/Facebook-PNG-Free-File-Download.png" alt="logo"></div>
+                <p class="fbp">sign in with facebook</p>
+            </div>
+            <div class="google">
+                <div class="googlein"> <img src="https://cdn2.hubspot.net/hubfs/53/image8-2.jpg" alt="logo"></div>
+                <p class="gop">sign in with Google</p>
+            </div>
+            <div class="area">
+                <label for="Email">Email</label>
+                <input type="text" placeholder="  Enter your Email Address here*">
+            </div>
+            <div class="area newarea">
+                <label for="Email">Password</label>
+                <input type="text" placeholder="  Enter your Password here*">
+            </div>
+            <div class="button">
+                <button><i class="fa-solid fa-angle-right"></i>   Login via e-mail</button>
+            </div >
+            <div class="forgot">
+                <p>Forgot Your Password?</p>
+            </div>
+        </div>
+        <!--  -->
+        <div class="midtwo">
+            <div class="not">
+                <h1 class="ho">Not registered yet? </h1>
+            </div>
+            <div class="twobutton"><button> <i class="fa-solid fa-angle-right"></i> Register</button></div>
+
+
+            <div class="today">
+                <p>Join Maggi Today!</p>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>Your personal newsletter with <br> exciting recipes and ideas</li>
+                    <li>Personalize your newsletter to your <br> preferences</li>
+                    <li>Get to know about Maggi products</li>
+                </ul>
+            </div>
+
+
+        </div>
+       
+
+    </div>
+    
+
+    </div>
+
+        
+
+    
+
+</body>
+</html>
